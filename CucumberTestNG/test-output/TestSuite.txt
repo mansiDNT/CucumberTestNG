@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.903 sec <<< FAILURE! - in TestSuite
+feature(MyRunner.TestRunner)  Time elapsed: 0.525 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.ExceptionInInitializerError
+	at MyRunner.TestRunner.feature(TestRunner.java:31)
+Caused by: java.lang.ExceptionInInitializerError
+	at MyRunner.TestRunner.feature(TestRunner.java:31)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @29b5cd00
+	at MyRunner.TestRunner.feature(TestRunner.java:31)
+

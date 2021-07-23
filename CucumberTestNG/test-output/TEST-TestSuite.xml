@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.903" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="16.0.1+9-24"/>
+    <property name="sun.boot.library.path" value="C:\Users\BAPS\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\BAPS\eclipse-workspace\CucumberTestNG"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\BAPS\eclipse-workspace\CucumberTestNG"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="16.0.1+9-24"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\BAPS\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\BAPS\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16751829397860682837.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\BAPS\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/BAPS/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;C:/Users/BAPS/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Java\jdk1.8.0_291\jre\bin;C:\Users\BAPS\Downloads\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Program Files\Git\cmd;C:\Users\BAPS\AppData\Local\Microsoft\WindowsApps;;C:\Windows\System32;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="60.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\BAPS"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="16"/>
+    <property name="user.name" value="BAPS"/>
+    <property name="java.class.path" value="C:\Users\BAPS\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.18.0.20210603-1206\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.home" value="C:\Users\BAPS\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\BAPS\eclipse-workspace\CucumberTestNG\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="feature" classname="MyRunner.TestRunner" time="0.525">
+    <failure message="java.lang.ExceptionInInitializerError" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: java.lang.ExceptionInInitializerError
+	at MyRunner.TestRunner.feature(TestRunner.java:31)
+Caused by: java.lang.ExceptionInInitializerError
+	at MyRunner.TestRunner.feature(TestRunner.java:31)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @29b5cd00
+	at MyRunner.TestRunner.feature(TestRunner.java:31)
+</failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+...
+... TestNG 6.9.10 by Cédric Beust (cedric@beust.com)
+...
+
+Feature: feature to test login functionality
+
+  Scenario: Check login is successful with valid credentials &amp#27;[90m# login.feature:3&amp#27;[0m
+    &amp#27;[31mGiven &amp#27;[0m&amp#27;[31muser is on login page&amp#27;[0m                              &amp#27;[90m# LoginSteps.user_is_on_login_page()&amp#27;[0m
+      &amp#27;[31mjava.lang.ExceptionInInitializerError
+      	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+      	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+      	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+      	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+      	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+      	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+      	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+      	at MyRunner.TestRunner.feature(TestRunner.java:31)
+      	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+      	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+      	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+      	at org.testng.TestRunner.run(TestRunner.java:632)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+      	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+      	at org.testng.TestNG.run(TestNG.java:1064)
+      	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+      	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+      	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+      	at ?.Given user is on login page(login.feature:4)
+      Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final java.util.Comparator java.util.TreeMap.comparator accessible: module java.base does not "opens java.util" to unnamed module @29b5cd00
+      	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:357)
+      	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+      	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:177)
+      	at java.base/java.lang.reflect.Field.setAccessible(Field.java:171)
+      	at cucumber.deps.com.thoughtworks.xstream.core.util.Fields.locate(Fields.java:39)
+      	at cucumber.deps.com.thoughtworks.xstream.converters.collections.TreeMapConverter.<clinit>(TreeMapConverter.java:50)
+      	at cucumber.deps.com.thoughtworks.xstream.XStream.setupConverters(XStream.java:820)
+      	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:574)
+      	at cucumber.deps.com.thoughtworks.xstream.XStream.<init>(XStream.java:530)
+      	at cucumber.runtime.xstream.LocalizedXStreams$LocalizedXStream.<init>(LocalizedXStreams.java:50)
+      	at cucumber.runtime.xstream.LocalizedXStreams.newXStream(LocalizedXStreams.java:37)
+      	at cucumber.runtime.xstream.LocalizedXStreams.get(LocalizedXStreams.java:29)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+      	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+      	at MyRunner.TestRunner.feature(TestRunner.java:31)
+      	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+      	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+      	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+      	at org.testng.TestRunner.run(TestRunner.java:632)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+      	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+      	at org.testng.TestNG.run(TestNG.java:1064)
+      	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+      	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+      	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+      	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+      &amp#27;[0m
+    &amp#27;[36mWhen &amp#27;[0m&amp#27;[36muser enters username and password&amp#27;[0m                   &amp#27;[90m# LoginSteps.user_enters_username_and_password()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mclick on login button&amp#27;[0m                                &amp#27;[90m# LoginSteps.click_on_login_button()&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is navigated to homepage&amp#27;[0m                       &amp#27;[90m# LoginSteps.user_is_navigated_to_homepage()&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
