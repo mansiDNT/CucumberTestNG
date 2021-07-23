@@ -15,7 +15,7 @@ public class LoginSteps {
 	
 	@Given("^user is on login page$")
 	public void user_is_on_login_page() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+	    // Write code here that turns the phrase above into concrete actions.
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\BAPS\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 		driver=new ChromeDriver();
 		driver.get("https://www.google.com/");
